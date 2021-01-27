@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     # 创建一个DxyJson类
     json_file = DxyJson(url)
-
+    run()
     scheduler = BlockingScheduler()
     scheduler.add_job(run, 'interval', minutes=30)
     try:
